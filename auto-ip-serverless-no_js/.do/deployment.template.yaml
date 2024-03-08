@@ -1,0 +1,13 @@
+alerts:
+- rule: DEPLOYMENT_FAILED
+- rule: DOMAIN_FAILED
+functions:
+- github:
+    branch: main
+    deploy_on_push: true
+    repo: nikiconluxury/auto-ip-serverless-no-js
+  name: serverless-no-js
+  routes:
+  - path: /
+  source_dir: /
+name: serverless-autoip
