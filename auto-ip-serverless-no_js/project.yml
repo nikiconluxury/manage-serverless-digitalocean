@@ -1,7 +1,0 @@
-environment:
-  HEADERSURL: ${HEADERSURL}
-packages:
-  - name: serverless-autoip
-    actions:
-      - name: noip
-        runtime: 'python:default'
